@@ -8,20 +8,20 @@
     <title>Home</title>
 </head>
 <body>
-    <%
-        BookDao bookDao = new BookDao();
-        List<Book> books = bookDao.selectAllBooks();
-        String s = "";
-        for (Book b : books) {
-            String str = "<div class=\"book_card\">\n" +
-                    "                <div>\n" +
-                    "                    <p>Name: " + b.getName() + "</p>\n" +
-                    "                    <a href=\"book?id=" +b.getId()+ "\">Show detail</a>" +
-                    "                </div>\n" +
-                    "            </div>";
-            s += str + "\n";
-        }
-    %>
+<%--    <%--%>
+<%--        BookDao bookDao = new BookDao();--%>
+<%--        List<Book> books = bookDao.selectAllBooks();--%>
+<%--        String s = "";--%>
+<%--        for (Book b : books) {--%>
+<%--            String str = "<div class=\"book_card\">\n" +--%>
+<%--                    "                <div>\n" +--%>
+<%--                    "                    <p>Name: " + b.getName() + "</p>\n" +--%>
+<%--                    "                    <a href=\"book?id=" +b.getId()+ "\">Show detail</a>" +--%>
+<%--                    "                </div>\n" +--%>
+<%--                    "            </div>";--%>
+<%--            s += str + "\n";--%>
+<%--        }--%>
+<%--    %>--%>
 
     <header>
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -33,16 +33,16 @@
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav">
                         <li class="nav-item">
-                            <a class="nav-link" href="logoutServlet">Logout</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="borrowed-books">My borrowed books</a>
-                        </li>
-                        <li class="nav-item">
                             <a class="nav-link" href="books-list">All books</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="students-list">All students</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="login">Log in</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="registration">Registration</a>
                         </li>
                     </ul>
                 </div>
@@ -54,7 +54,7 @@
         <div class="container">
             <h1 class="title">Books</h1>
             <div class="ul-flex">
-                <%= s %>
+<%--                <%= s %>--%>
             </div>
         </div>
     </main>

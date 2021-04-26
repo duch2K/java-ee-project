@@ -6,18 +6,11 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-<<<<<<< HEAD
-        <module name="lab2" />
-        <module name="javaee-midterm" />
-      </profile>
-    </annotationProcessing>
-=======
         <module name="javaee-project" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="javaee-project" target="1.8" />
     </bytecodeTargetLevel>
->>>>>>> 52f13cd... init
   </component>
 </project>

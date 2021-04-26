@@ -12,7 +12,8 @@
 <body>
 <%
     StudentDao studentDao = new StudentDao();
-    List<Book> books = studentDao.selectStudentBooks();
+    int id = 1;
+    List<Book> books = studentDao.selectStudentBooks(id);
     String s = "";
     System.out.println("All borrowed books: " + books);
 

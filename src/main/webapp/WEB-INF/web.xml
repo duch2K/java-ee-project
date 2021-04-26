@@ -1,6 +1,5 @@
 <web-app>
-
-
+<!--  BaseServlet  -->
 <!--    <servlet>-->
 <!--        <servlet-name>baseServlet</servlet-name>-->
 <!--        <servlet-class>kz.iitu.javaee.BaseServlet</servlet-class>-->
@@ -71,7 +70,6 @@
 <!--        <servlet-name>BorrowedBooks</servlet-name>-->
 <!--        <url-pattern>/borrowed-books</url-pattern>-->
 <!--    </servlet-mapping>-->
->>>>>>> 52f13cd... init
 
 
 
